@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.player-score, .computer-score {
+    background: #f8f8f8;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 45%;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.choice-btn {
+    background: none;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.choice-btn:hover {
+    transform: scale(1.1);
+}
+
+.result-text {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    min-height: 2rem;
+}
+
+.reset-btn {
+    background: #ff4757;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.reset-btn:hover {
+    background: #ff6b81;
+}
+
+/* Animation for choices */
+@keyframes shake {
+    0%, 100% { transform: translateY(0); }
+    25% { transform: translateY(-10px); }
+    75% { transform: translateY(10px); }
+}
+
+.shake {
+    animation: shake 0.5s ease;
+}
